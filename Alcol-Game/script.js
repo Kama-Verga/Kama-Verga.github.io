@@ -30,7 +30,7 @@ fetch('Database.csv')
 
 
 function NextCard(){
-    console.log(list[i].dif);
+    console.log(list[0].dif);
     document.querySelector("#title").innerHTML = list[0].titolo;
     AddDifficulty(3);
     document.querySelector("#text").innerHTML = "testo aggiornato assurdo";
