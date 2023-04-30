@@ -12,10 +12,6 @@ class Card{
 
 let list = [];
 
-function load(){
-
-}
-
 fetch('Database.csv')
 .then(response => response.text())
 .then(data => {
@@ -30,10 +26,14 @@ fetch('Database.csv')
 
 
 function NextCard(){
-    console.log(list[0].dif);
-    document.querySelector("#title").innerHTML = list[0].titolo;
-    AddDifficulty(3);
-    document.querySelector("#text").innerHTML = "testo aggiornato assurdo";
+    do {
+        let Ncard = Math.floor(Math.random() * list.length);
+    } while (old.includes(Ncard));
+    old.push(NextCard);
+
+    document.querySelector("#title").innerHTML = list[Ncard].titolo;
+    AddDifficulty(parseInt(list[Ncard].dif));
+    document.querySelector("#text").innerHTML = list[Ncard].testo;
 }
 
 
