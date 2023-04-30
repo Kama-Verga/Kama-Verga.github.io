@@ -23,14 +23,15 @@ fetch('Database.csv')
   }
 });
 
-
+var Ncard = 0;
 
 function NextCard(){
     do {
-        let Ncard = Math.floor(Math.random() * list.length);
+        Ncard = parseInt(Math.floor(Math.random() * list.length));
+        console.log("estraggo il numero" + Ncard);
     } while (old.includes(Ncard));
     old.push(NextCard);
-
+    console.log(Ncard);
     document.querySelector("#title").innerHTML = list[Ncard].titolo;
     AddDifficulty(parseInt(list[Ncard].dif));
     document.querySelector("#text").innerHTML = list[Ncard].testo;
