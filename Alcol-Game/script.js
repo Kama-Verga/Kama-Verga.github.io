@@ -23,13 +23,14 @@ fetch('Database.csv')
   for(let i = 0; i < rows.length; i++){
     const columns = rows[i].split(',');
     list.push(new Card (columns[0],columns[1],columns[2]));
+    console.log(list[i].testo);
   }
 });
 
 
 
 function NextCard(){
-    document.querySelector("#title").innerHTML ="te";
+    document.querySelector("#title").innerHTML = list[i].testo;
     AddDifficulty(3);
     document.querySelector("#text").innerHTML = "testo aggiornato assurdo";
 }
