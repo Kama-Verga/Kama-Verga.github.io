@@ -6,11 +6,63 @@
 body{
     height: 100vh;
     background: linear-gradient(
+        #ffffff,
+        #ffffff
+    ) 0 100% no-repeat;
+    background-size: 100% 50%;
+}
+body.NTE{
+    height: 100vh;
+    background: linear-gradient(
         #000000,
         #000000
     ) 0 100% no-repeat;
     background-size: 100% 50%;
 }
+
+.menu{
+    width: 1000px;
+    padding: 10px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 46px;
+    left: 50%;
+    background-color: #000000;
+    box-shadow: 100 150px 25px rgba(50,50,50,0.15);
+    border-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+}
+button.Bmenu{
+    background-color: #00000000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 15px 0;
+    width: 150px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    font-size: 16px;
+    font-weight: bold;
+}
+img.Imenu{
+    width: 50px;
+    height: 50px;
+    position: absolute; /* rende l'immagine posizionata all'interno della div */
+    left: 50px; /* posiziona l'immagine all'estremo sinistro della div */
+    top: 22%; /* posiziona l'immagine all'estremo superiore della div */
+}
+.vertical-line {
+    border-left: 1px solid rgba(0, 0, 0, 0.185);
+    height: 50px; /* altezza a tua scelta */
+}
+
+
+
 .container{
     width: 400px;
     padding: 50px;
@@ -26,6 +78,28 @@ body{
     align-items: center;
     font-family: "Poppins",sans-serif;
 }
+.card{
+    width: 250px;
+    height: 400px;
+    padding: 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 42%;
+    left: 50%;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 15px 25px rgba(50,50,50,0.15);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+
 .dice-wrapper{
     width: 90%;
     display: flex;

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="icon.png">    
+    <meta name="viewport" content="width=decice-width, initial-scale=1.0">
+    <title>Extraxt your token</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="NTE">
+    <div class="menu">
+    <table><tr>
+        <th><img src="../logo.png" class="Imenu"></th><th><div class="vertical-line"></div></th>
+        <th><button class="Bmenu" onclick="window.location.href='NTE-Bag.html'">Not The End Token Bag</button></th><th><div class="vertical-line"></div></th>
+        <th><button class="Bmenu" onclick="window.location.href='../Alcol-Game/Alcol-Game.html'">Alcol Game</button></th><th><div class="vertical-line"></div></th>
+        <th><button class="Bmenu" onclick="">3</button></th><th><div class="vertical-line"></div></th>
+        <th><button class="Bmenu" onclick="window.location.href='../index.html'">Home</button></th><th><div class="vertical-line"></div></th>
+    </tr></table>
+    </div>
+
+    
+    <div class="container">
+        <center><img src="title.png" style="margin-top: -50px;"> </center>
+        <p></p>
+        <div class="dice-wrapper" id="dice-wrapper"></div>
+        <p></p>
+        <table>
+            <tr><th><button onclick="addWhite()">ADD WHITE</button></th><th><button onclick="addBlack()">ADD BLACK</button></th></tr>
+            <tr><th><label id="whiteT">0</label></th><th><label id="blackT">0</label></th></tr>
+            <tr><th><button onclick="minusWhite()">MIN WHITE</button></th><th><button onclick="minusBlack()">MIN BLACK</button></th></tr>
+        </table>
+        <p>
+        </p>
+        <label>Extract</label>
+        <table><tr>
+            <th><button style="width: 50px;" onclick="run(1)">1</button></th>
+            <th><button style="width: 50px;" onclick="run(2)">2</button></th>
+            <th><button style="width: 50px;" onclick="run(3)">3</button></th>
+            <th><button style="width: 50px;" onclick="run(4)">4</button></th>
+        </tr></table>
+        <table><tr><th><button style="width: 102px;" onclick="run(4)">adrenaline</button></th><th><button style="width: 102px;" id="conf" onclick="con()">conf: off</button></th></tr></table>
+    </div>
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
