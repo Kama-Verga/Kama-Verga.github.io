@@ -5,7 +5,7 @@ var Twhite = 0;
 var Tblack = 0;
 var conf = false;
 
-var ANtoken = document.querySelectorAll("button");
+var ANtoken = document.querySelectorAll("#animation");
 
 
 function addBlack(){

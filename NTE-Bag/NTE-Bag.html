@@ -27,18 +27,16 @@
         <div class="dice-wrapper" id="dice-wrapper"></div>
         <p></p>
         <table>
-            <tr><th><button onclick="addWhite()">ADD WHITE</button></th><th><button onclick="addBlack()">ADD BLACK</button></th></tr>
+            <tr><th><button id="animation" onclick="addWhite()">ADD WHITE</button></th><th><button id="animation" onclick="addBlack()">ADD BLACK</button></th></tr>
             <tr><th><label id="whiteT">0</label></th><th><label id="blackT">0</label></th></tr>
-            <tr><th><button onclick="minusWhite()">MIN WHITE</button></th><th><button onclick="minusBlack()">MIN BLACK</button></th></tr>
+            <tr><th><button id="animation" onclick="minusWhite()">MIN WHITE</button></th><th><button id="animation" onclick="minusBlack()">MIN BLACK</button></th></tr>
         </table>
-        <p>
-        </p>
         <label>Extract</label>
         <table><tr>
-            <th><button style="width: 50px;" onclick="run(1)">1</button></th>
-            <th><button style="width: 50px;" onclick="run(2)">2</button></th>
-            <th><button style="width: 50px;" onclick="run(3)">3</button></th>
-            <th><button style="width: 50px;" onclick="run(4)">4</button></th>
+            <th><button style="width: 50px;" id="animation" onclick="run(1)">1</button></th>
+            <th><button style="width: 50px;" id="animation" onclick="run(2)">2</button></th>
+            <th><button style="width: 50px;" id="animation" onclick="run(3)">3</button></th>
+            <th><button style="width: 50px;" id="animation" onclick="run(4)">4</button></th>
         </tr></table>
         <table><tr><th><button style="width: 102px;" onclick="run(4)">adrenaline</button></th><th><button style="width: 102px;" id="conf" onclick="con()">conf: off</button></th></tr></table>
     </div>

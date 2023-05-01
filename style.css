@@ -60,17 +60,14 @@ img.Imenu{
     left: 20px; /* posiziona l'immagine all'estremo sinistro della div */
     top: 22%; /* posiziona l'immagine all'estremo superiore della div */
 }
-.vertical-line {
-    border-left: 1px solid rgba(0, 0, 0, 0.185);
-    height: 50px; /* altezza a tua scelta */
-}
+
 
 .container{
     width: 90%;
-    padding: 10px;
+    height: 90%;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 60%;
+    top: 78%;
     left: 50%;
     background-color: #ffffff;
     box-shadow: 0 15px 25px rgba(50,50,50,0.15);
