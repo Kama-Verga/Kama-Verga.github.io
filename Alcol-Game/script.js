@@ -25,7 +25,10 @@ fetch('Database.csv')
 
 var Ncard = 0;
 
+var Back = 0;
+
 function NextCard(){
+    Back = 0;
     do {
         Ncard = parseInt(Math.floor(Math.random() * list.length));
         console.log("estraggo il numero" + Ncard);
@@ -40,6 +43,21 @@ function NextCard(){
     document.querySelector("#text").innerHTML = list[Ncard].testo;
 }
 
+function BackCard(){
+    let lastCard;
+    let backup;
+
+    Back++;
+    for(let i = Back; i > 0; i--){
+        backup.push(old.pop);
+    }
+    
+    lastCard = backup[backup.length-1];
+
+    document.querySelector("#title").innerHTML = lastCard.titolo;
+    AddDifficulty(parseInt(lastCard.dif));
+    document.querySelector("#text").innerHTML = lastCard.testo;
+}
 
 function AddDifficulty(n){
     var parent = document.getElementById("penality");
