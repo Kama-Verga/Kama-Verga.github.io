@@ -29,9 +29,10 @@ function NextCard(){
     do {
         Ncard = parseInt(Math.floor(Math.random() * list.length));
         console.log("estraggo il numero" + Ncard);
-    } while (old.includes(Ncard));
-    old.push(NextCard);
+    } while (old.includes(Ncard) && old.length != list.length);
+    old.push(Ncard);
     console.log(Ncard);
+    
     document.querySelector("#title").innerHTML = list[Ncard].titolo;
     AddDifficulty(parseInt(list[Ncard].dif));
     document.querySelector("#text").innerHTML = list[Ncard].testo;
@@ -39,12 +40,10 @@ function NextCard(){
 
 
 function AddDifficulty(n){
-
     var parent = document.getElementById("penality");
     while (parent.lastChild) {
         parent.removeChild(parent.lastChild);
     }
-
     for(var i = n; i>0; i--){
         var img = document.createElement("img");
         var temp = "penality.png";
