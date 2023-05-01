@@ -47,7 +47,7 @@ function BackCard(){
     let lastCard;
     let backup = [];
     
-    if(old.length > 0){
+    if(old.length > 1){
 
         Back++;
         for(let i = Back; i > 0; i--){
