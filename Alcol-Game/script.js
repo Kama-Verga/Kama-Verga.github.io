@@ -67,7 +67,8 @@ function BackCard(){
             console.log("ripristino: " + temp);
             old.push(temp);
         }
-    }
+    }else console.log("nessuna esecuzione");
+    
 }
 
 function AddDifficulty(n){
