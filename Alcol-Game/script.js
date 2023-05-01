@@ -62,7 +62,7 @@ function BackCard(){
         AddDifficulty(parseInt(list[lastCard].dif));
         document.querySelector("#text").innerHTML = list[lastCard].testo;
 
-        for(let j = backup.length; j > 0; i--){
+        for(let j = backup.length; j > 0; j--){
             let temp = backup.pop();
             console.log("ripristino: " + temp);
             old.push(temp);
