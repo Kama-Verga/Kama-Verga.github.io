@@ -29,7 +29,9 @@ function NextCard(){
     do {
         Ncard = parseInt(Math.floor(Math.random() * list.length));
         console.log("estraggo il numero" + Ncard);
-    } while (old.includes(Ncard) && old.length != list.length);
+        console.log("old" + old.length);
+        console.log("list" + list.length);
+    } while (old.includes(Ncard) && old.length != list.length-1);
     old.push(Ncard);
     console.log(Ncard);
     
