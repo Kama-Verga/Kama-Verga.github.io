@@ -81,13 +81,30 @@ img.Imenu{
     font-family: "Poppins",sans-serif;
 }
 
-.card{
+.containerCard{
     width: 90%;
-    height: 70%;
+    height: 60%;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 15px 25px rgba(50,50,50,0.15);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+}
+
+.card{
+    width: 80%;
+    height: 93%;
     padding: 30px;
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 42%;
+    top: 35%;
     left: 50%;
     background-color: #000000;
     color: #ffffff;
@@ -170,14 +187,32 @@ button{
         flex-direction: column;
         align-items: center;
         font-family: "Poppins",sans-serif;
+    } 
+
+
+    .containerCard{
+        width: 400px;
+        height: 400px;
+        padding: 50px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        background-color: #ffffff;
+        box-shadow: 0 15px 25px rgba(50,50,50,0.15);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Poppins",sans-serif;
     }
     .card{
         width: 250px;
-        height: 400px;
+        height: 310px;
         padding: 30px;
         position: absolute;
         transform: translate(-50%,-50%);
-        top: 42%;
+        top: 45%;
         left: 50%;
         background-color: #000000;
         color: #ffffff;
