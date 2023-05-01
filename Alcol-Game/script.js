@@ -17,7 +17,7 @@ fetch('Database.csv')
 .then(data => {
   const rows = data.split('\n');
   for(let i = 0; i < rows.length; i++){
-    const columns = rows[i].split(',');
+    const columns = rows[i].split('-');
     list.push(new Card (columns[0],columns[1],columns[2]));
     console.log(list[i].testo);
   }
