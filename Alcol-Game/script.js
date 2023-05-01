@@ -45,7 +45,7 @@ function NextCard(){
 
 function BackCard(){
     let lastCard;
-    let backup;
+    let backup = [];
 
     Back++;
     for(let i = Back; i > 0; i--){
