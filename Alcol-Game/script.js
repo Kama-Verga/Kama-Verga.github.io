@@ -50,7 +50,12 @@ function BackCard(){
     if(old.length > 1){
 
         Back++;
-        for(let i = Back; i > 0; i--){
+
+        let temp2 = old.pop();
+        console.log("estraggo: " + temp2);
+        backup.push(temp2);
+
+        for(let i = Back+1; i > 0; i--){
             let temp = old.pop();
             console.log("estraggo: " + temp);
             backup.push(temp);
