@@ -31,7 +31,7 @@ function NextCard(){
         console.log("estraggo il numero" + Ncard);
         console.log("old" + old.length);
         console.log("list" + list.length);
-    } while (old.includes(Ncard) && old.length != list.length-1);
+    } while (old.includes(Ncard) && old.length <= list.length-2);
     old.push(Ncard);
     console.log(Ncard);
     
