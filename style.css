@@ -21,7 +21,7 @@ body.NTE{
 }
 
 .menu{
-    width: 1000px;
+    width: 650px;
     padding: 10px;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -41,7 +41,7 @@ button.Bmenu{
     outline: none;
     color: #ffffff;
     padding: 15px 0;
-    width: 150px;
+    width: 130px;
     letter-spacing: 1px;
     border-radius: 5px;
     cursor: pointer;
