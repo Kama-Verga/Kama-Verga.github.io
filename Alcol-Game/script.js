@@ -45,7 +45,7 @@ function NextCard(){
 
 function BackCard(){
     let lastCard;
-    console.log(Back);
+    console.log("valore back" + Back);
 
     if(old.length > 1){
         
