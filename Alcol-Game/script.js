@@ -27,10 +27,17 @@ var Ncard = 0;
 
 var Back = 0;
 
-var ANCard = document.getElementById("myElement");
+
+var ANCard = document.querySelectorAll("#Card")
 
 function NextCard(){
-    element.classList.add("FlipC");
+    ANCard.forEach(function(die){
+        die.classList.add("FlipC");
+    });
+    setTimeout(function(){
+        ANCard.forEach(function(die){
+            die.classList.remove("FlipC");
+        });
     Back = 0;
     do {
         Ncard = parseInt(Math.floor(Math.random() * list.length));
@@ -45,7 +52,7 @@ function NextCard(){
     AddDifficulty(parseInt(list[Ncard].dif));
     document.querySelector("#text").innerHTML = list[Ncard].testo;
 
-    element.classList.remove("FlipC");
+    }, 500);
 
 }
 
