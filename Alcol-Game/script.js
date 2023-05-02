@@ -49,7 +49,7 @@ function BackCard(){
 
     if(old.length > 1){
         
-
+        Back++;
         lastCard = (old.length - (Back+1));
         
         console.log(lastCard);
@@ -60,7 +60,7 @@ function BackCard(){
         AddDifficulty(parseInt(list[lastCard].dif));
         document.querySelector("#text").innerHTML = list[lastCard].testo;
         
-        Back++;
+        
     }else console.log("nessuna esecuzione");
     
 }
