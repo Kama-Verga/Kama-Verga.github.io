@@ -46,7 +46,7 @@ function NextCard(){
 function BackCard(){
     let lastCard;
     
-    if(old.length > 1){
+    if(old.length > 1 && (old.length - (Back+2)) > 0 ){
         Back++;
 
         lastCard = (old.length - (Back+1));
