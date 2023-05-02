@@ -45,33 +45,16 @@ function NextCard(){
 
 function BackCard(){
     let lastCard;
-    let backup = [];
     
     if(old.length > 1){
-
         Back++;
 
-        let temp2 = old.pop();
-        console.log("estraggo: " + temp2);
-        backup.push(temp2);
-
-        for(let i = Back+1; i > 0; i--){
-            let temp = old.pop();
-            console.log("estraggo: " + temp);
-            backup.push(temp);
-        }
-
-        lastCard = parseInt(backup[backup.length-1]);
+        lastCard = (old.length - (Back+1));
 
         document.querySelector("#title").innerHTML = list[lastCard].titolo;
         AddDifficulty(parseInt(list[lastCard].dif));
         document.querySelector("#text").innerHTML = list[lastCard].testo;
 
-        for(let j = backup.length; j > 0; j--){
-            let temp = backup.pop();
-            console.log("ripristino: " + temp);
-            old.push(temp);
-        }
     }else console.log("nessuna esecuzione");
     
 }
