@@ -53,7 +53,7 @@ function BackCard(){
         lastCard = old[(old.length - (Back+1))];
         
         console.log(lastCard);
-        if(lastCard < 0) lastCard = 0;
+        if(lastCard < 0) lastCard = old[0];
         console.log(lastCard);
 
         document.querySelector("#title").innerHTML = list[lastCard].titolo;
