@@ -50,7 +50,7 @@ function BackCard(){
     if(old.length > 1){
         
         Back++;
-        lastCard = (old.length - (Back+1));
+        lastCard = old[(old.length - (Back+1))];
         
         console.log(lastCard);
         if(lastCard < 0) lastCard = 0;
