@@ -27,7 +27,10 @@ var Ncard = 0;
 
 var Back = 0;
 
+var ANCard = document.getElementById("myElement");
+
 function NextCard(){
+    element.classList.add("FlipC");
     Back = 0;
     do {
         Ncard = parseInt(Math.floor(Math.random() * list.length));
@@ -41,6 +44,9 @@ function NextCard(){
     document.querySelector("#title").innerHTML = list[Ncard].titolo;
     AddDifficulty(parseInt(list[Ncard].dif));
     document.querySelector("#text").innerHTML = list[Ncard].testo;
+
+    element.classList.remove("FlipC");
+
 }
 
 function BackCard(){

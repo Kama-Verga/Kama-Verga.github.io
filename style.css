@@ -250,6 +250,16 @@ p{
 .shake{
     animation: shake 0.5s infinite;
 }
+
+@keyframes FlipC {
+    50%{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
 @keyframes shake{
     0%{
         transform: rotate(5deg);
