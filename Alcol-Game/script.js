@@ -45,16 +45,22 @@ function NextCard(){
 
 function BackCard(){
     let lastCard;
-    
-    if(old.length > 1 && (old.length - (Back+2)) > 0 ){
-        Back++;
+    console.log(Back);
+
+    if(old.length > 1){
+        
 
         lastCard = (old.length - (Back+1));
+        
+        console.log(lastCard);
+        if(lastCard < 0) lastCard = 0;
+        console.log(lastCard);
 
         document.querySelector("#title").innerHTML = list[lastCard].titolo;
         AddDifficulty(parseInt(list[lastCard].dif));
         document.querySelector("#text").innerHTML = list[lastCard].testo;
-
+        
+        Back++;
     }else console.log("nessuna esecuzione");
     
 }
