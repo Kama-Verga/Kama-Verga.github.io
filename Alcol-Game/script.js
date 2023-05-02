@@ -32,11 +32,11 @@ var ANCard = document.querySelectorAll("#Card")
 
 function NextCard(){
     ANCard.forEach(function(die){
-        die.classList.add("FlipC");
+        die.classList.add("shake");
     });
     setTimeout(function(){
         ANCard.forEach(function(die){
-            die.classList.remove("FlipC");
+            die.classList.remove("shake");
         });
     Back = 0;
     do {
