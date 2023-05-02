@@ -257,7 +257,7 @@ p{
 }
 
 .FlipC{
-    animation: FlipC 1.5s infinite;
+    animation: FlipC 1s infinite;
 }
 
 @keyframes FlipC {

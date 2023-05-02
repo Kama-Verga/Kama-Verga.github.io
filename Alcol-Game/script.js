@@ -52,7 +52,7 @@ function NextCard(){
     AddDifficulty(parseInt(list[Ncard].dif));
     document.querySelector("#text").innerHTML = list[Ncard].testo;
 
-    }, 500);
+    }, 1000);
 
 }
 
