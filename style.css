@@ -239,7 +239,14 @@ button{
         cursor: pointer;
     }
 }
+    
 
+.DiceMG{
+    width: 20%;
+}
+.DiceM{
+    width: 80%;
+}
 
 .dice-wrapper{
     width: 90%;
