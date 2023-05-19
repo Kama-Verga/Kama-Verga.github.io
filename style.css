@@ -60,8 +60,6 @@ img.Imenu{
     left: 20px; /* posiziona l'immagine all'estremo sinistro della div */
     top: 22%; /* posiziona l'immagine all'estremo superiore della div */
 }
-
-
 .container{
     width: 90%;
     height: 90%;
@@ -77,11 +75,10 @@ img.Imenu{
     align-items: center;
     font-family: "Poppins",sans-serif;
 }
-
 .containerCard{
     width: 90%;
-    height: 60%;
-    padding: 50px;
+    height: 55%;
+    padding: 30px;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 60%;
@@ -92,6 +89,8 @@ img.Imenu{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    overflow: "auto";
     font-family: "Poppins",sans-serif;
 }
 
@@ -129,7 +128,6 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
-
 }
   
   /* on desktop Stili per schermi di dimensioni superiori o uguali a 768px */
@@ -189,12 +187,10 @@ button{
         align-items: center;
         font-family: "Poppins",sans-serif;
     } 
-
-
     .containerCard{
         width: 400px;
         height: 400px;
-        padding: 50px;
+        padding: 30px;
         position: absolute;
         transform: translate(-50%,-50%);
         top: 50%;
@@ -205,6 +201,8 @@ button{
         display: flex;
         flex-direction: column;
         align-items: center;
+        
+        overflow: "auto";
         font-family: "Poppins",sans-serif;
     }
     .card{
@@ -249,15 +247,17 @@ button{
 }
 
 .dice-wrapper{
-    width: 90%;
-    display: flex;
+    width: 100%;
+    display: block;
     justify-content: space-around;
+    overflow: "auto";
 }
 p{
     font-size: 16px;
     margin: 30px 0;
     font-weight: 500;
 }
+
 
 .shake{
     animation: shake 0.5s infinite;
