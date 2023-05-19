@@ -1,4 +1,3 @@
-
 //["Token_W.png", "Token_B.png"];
 
 var C_D = -1;
@@ -23,7 +22,7 @@ function run(n){
 function increaseDive(N) {
     var div = document.getElementById("Scatola");
     var heigt = div.offsetHeight;
-    var Nheigt = heigt + N; // Incremento di 50 pixel, puoi personalizzare il valore come desideri
+    var Nheigt = heigt + N;
     div.style.height = Nheigt + "px";
 }
 
