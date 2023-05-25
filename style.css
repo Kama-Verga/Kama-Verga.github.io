@@ -246,12 +246,18 @@ button{
     width: 80%;
 }
 
-.dice-wrapper{
+.dice-wrapper-Dice{
     width: 100%;
     display: block;
     justify-content: space-around;
     overflow: "auto";
 }
+.dice-wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
 p{
     font-size: 16px;
     margin: 30px 0;
