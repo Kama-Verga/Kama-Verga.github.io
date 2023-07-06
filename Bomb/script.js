@@ -21,5 +21,5 @@ function Next(){
     i = Math.floor(Math.random() * list.length);    
     } while (OldList.includes(i) && OldList.length < list.length -1);
     OldList.push(i);
-    document.querySelector("#text").innerHTML = i;
+    document.querySelector("#text").innerHTML = list[i];
 }
