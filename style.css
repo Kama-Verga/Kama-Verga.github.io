@@ -293,3 +293,24 @@ p{
         transform: rotate(5deg);
     }
 }
+
+
+
+
+
+  .container_img{
+    width: 600px;
+    height: 400px;
+  }
+  .img_text{
+    color: white;
+    font-size: 200%;
+    position: absolute;
+    align-items: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 0 10px black;
+  }
+  
+  
