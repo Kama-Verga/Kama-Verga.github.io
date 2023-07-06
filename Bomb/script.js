@@ -16,7 +16,6 @@ fetch('Database.csv')
 });
 
 function playAudioLoop() {
-  Tick.currentTime = 0; // Resettiamo il tempo di riproduzione
   Tick.play(); // Avviamo la riproduzione dell'audio
 
   // Impostiamo un timeout per fermare l'audio dopo un certo periodo di tempo
