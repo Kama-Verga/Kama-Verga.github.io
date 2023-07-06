@@ -1,5 +1,6 @@
 
-
+var Tick = document.getElementById("#TickTack")
+var Boom = document.getElementById("#Boom")
 
 let list = [];
 let OldList = [];
@@ -14,12 +15,21 @@ fetch('Database.csv')
   }
 });
 
+function playAudioLoop() {
+  audio.play();
+  Boom.play();
+}
 
 function Next(){
-    var i;
-    do {
+var i;
+  do {
     i = Math.floor(Math.random() * list.length);    
-    } while (OldList.includes(i) && OldList.length < list.length -1);
-    OldList.push(i);
-    document.querySelector("#text").innerHTML = list[i];
+  } while (OldList.includes(i) && OldList.length < list.length -1);
+  OldList.push(i);
+  document.querySelector("#text").innerHTML = list[i];
+
+
+playAudioLoop();
+
+
 }
