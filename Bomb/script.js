@@ -16,7 +16,15 @@ fetch('Database.csv')
 });
 
 function playAudioLoop() {
-  audio.play();
+  Tick.currentTime = 0; // Resettiamo il tempo di riproduzione
+  Tick.play(); // Avviamo la riproduzione dell'audio
+
+  // Impostiamo un timeout per fermare l'audio dopo un certo periodo di tempo
+  setTimeout(function() {
+    Tick.pause(); // Fermiamo la riproduzione dell'audio
+    Tick.currentTime = 0; // Resettiamo il tempo di riproduzione
+  }, Tick.duration * 5 * 1000); // Moltiplichiamo la durata dell'audio per il numero di volte in cui deve essere riprodotto in loop
+
   Boom.play();
 }
 
@@ -27,7 +35,5 @@ function Next(){
   } while (OldList.includes(i) && OldList.length < list.length -1);
   OldList.push(i);
   document.querySelector("#text").innerHTML = list[i];
-  audio.play();
-  Boom.play();
   playAudioLoop();
 }
