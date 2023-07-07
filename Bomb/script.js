@@ -1,5 +1,10 @@
 
 var Tick = document.getElementById("#TickTack")
+
+var Tick2 = new Audio({
+  src: ['Ticktack.mp3']
+});
+
 var Boom = document.getElementById("#Boom")
 
 let list = [];
@@ -15,8 +20,12 @@ fetch('Database.csv')
   }
 });
 
+function playAudioLoop() {
+  Tick2.play();
+}
 
 function Next(){
+  playAudioLoop();
   var i;
   do {
    i = Math.floor(Math.random() * list.length);    
@@ -24,15 +33,7 @@ function Next(){
   OldList.push(i);
   document.querySelector("#text").innerHTML = list[i];
 
+  playAudioLoop();
 
-  Tick.currentTime = 0; // Resettiamo il tempo di riproduzione
-  Tick.play(); // Avviamo la riproduzione dell'audio
-
-  // Impostiamo un timeout per fermare l'audio dopo un certo periodo di tempo
-  setTimeout(function() {
-    Tick.pause(); // Fermiamo la riproduzione dell'audio
-    Tick.currentTime = 0; // Resettiamo il tempo di riproduzione
-  }, Tick.duration * 5 * 1000); // Moltiplichiamo la durata dell'audio per il numero di volte in cui deve essere riprodotto in loop
-
-  Boom.play();
+  
 }
