@@ -40,7 +40,7 @@ function Next(){
     } while (OldList.includes(i) && OldList.length < list.length -1);
     OldList.push(i);
     document.querySelector("#text").innerHTML = list[i];
-    var n = 1;/* Math.floor(Math.random() * 15)*/
+    var n = Math.floor(Math.random() * 15);
 
     let Sn = n;
     playAudioLoop(n);
