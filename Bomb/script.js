@@ -1,7 +1,8 @@
+var Boom = new Howl({
+  src: ['Boom.mp3']
+});
 
-var Tick = document.getElementById("#TickTack")
-
-var Tick2 = new Audio({
+var Tick = new Howl({
   src: ['Ticktack.mp3']
 });
 
@@ -21,7 +22,8 @@ fetch('Database.csv')
 });
 
 function playAudioLoop() {
-  Tick2.play();
+  Boom.play();
+  Tick.play();
 }
 
 function Next(){
@@ -33,7 +35,4 @@ function Next(){
   OldList.push(i);
   document.querySelector("#text").innerHTML = list[i];
 
-  playAudioLoop();
-
-  
 }
