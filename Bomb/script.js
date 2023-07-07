@@ -41,6 +41,7 @@ function Next(){
     OldList.push(i);
     document.querySelector("#text").innerHTML = list[i];
     var n = Math.floor(Math.random() * 11);
+    n = n+1;
 
     let Sn = n;
     playAudioLoop(n);
