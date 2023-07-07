@@ -22,13 +22,20 @@
     </tr></table>
     </div>
     
-    <audio id="TickTack" src="Ticktack.mp3" loop></audio>
-    <audio id="Boom"     src="Boom.mp3"     loop></audio>
+    <audio>
+        <source id="TickTack" src="Ticktack.ogg" type="audio/ogg">
+        <source id="TickTack" src="Ticktack.mp3" type="audio/mpeg">
+        <source id="TickTack" src="Ticktack.wav" type="audio/wav">
+        <source id="Boom" src="Boom.ogg" type="audio/ogg">
+        <source id="Boom" src="Boom.mp3" type="audio/mpeg">
+        <source id="Boom" src="Boom.wav" type="audio/wav">
+        il tuo browser non riesce a caricare l'audio.
+    </audio>
 
     <div class="containerCard"> 
         <img src="Bomb.png">
         <div class="img_text" id="text"> </div>
-        <button tyle="bottom:0" onclick="Next()">NEXT</button></th>
+        <button id="NextButton" tyle="bottom:0" onclick="Next()">NEXT</button></th>
     </div>
     <!--Script-->
     <script src="script.js"></script>
