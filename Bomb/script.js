@@ -1,9 +1,10 @@
+
 var Boom = new Howl({
-  src: ['Audio/Boom.ogg']
+  src: ['Audio/Boom.mp3']
 });
 
 var Tick = new Howl({
-  src: ['Audio/Ticktack.ogg']
+  src: ['Audio/Ticktack.mp3']
 });
 
 let list = [];
