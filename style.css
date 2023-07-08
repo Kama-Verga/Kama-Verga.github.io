@@ -48,7 +48,8 @@ button.Bmenu{
     width: 80px;
     letter-spacing: 1px;
     cursor: pointer;
-    font-size: 80%;
+
+    font-size: 70%;
     font-weight: bold;
 }
 img.Imenu{
