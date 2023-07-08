@@ -10,7 +10,7 @@
     <!--Stylesheet-->
     <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body onload="Load()">
     <div class="menu">
     <table><tr>
         <th><button class="Bmenu"><img src="../logo.png" class="Imenu" style="width: 50px;
@@ -22,19 +22,9 @@
     </tr></table>
     </div>
     
-    <audio>
-        <source id="TickTack" src="Ticktack.ogg" type="audio/ogg">
-        <source id="TickTack" src="Ticktack.mp3" type="audio/mpeg">
-        <source id="TickTack" src="Ticktack.wav" type="audio/wav">
-        <source id="Boom" src="Boom.ogg" type="audio/ogg">
-        <source id="Boom" src="Boom.mp3" type="audio/mpeg">
-        <source id="Boom" src="Boom.wav" type="audio/wav">
-        il tuo browser non riesce a caricare l'audio.
-    </audio>
-
-    <div class="containerCard"> 
+    <div class="containerBomb"> 
         <img src="Bomb.png">
-        <div class="img_text" id="text"> </div>
+        <div class="img_text" id="text"></div>
         <button id="NextButton" tyle="bottom:0" onclick="Next()">NEXT</button></th>
     </div>
     <!--Script-->
