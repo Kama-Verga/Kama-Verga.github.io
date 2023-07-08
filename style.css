@@ -45,7 +45,7 @@ button.Bmenu{
     outline: none;
     color: #ffffff;
     padding: 15px 0;
-    width: 80px;
+    width: 60px;
     letter-spacing: 1px;
     cursor: pointer;
 
@@ -176,7 +176,7 @@ button{
         border-radius: 5px;
         cursor: pointer;
         
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold;
     }
     img.Imenu{
@@ -229,7 +229,7 @@ button{
         padding: 30px;
         position: absolute;
         transform: translate(-50%,-50%);
-        top: 35%;
+        top: 50%;
         left: 50%;
         background-color: #ffffff;
         box-shadow: 0 15px 25px rgba(50,50,50,0.15);
